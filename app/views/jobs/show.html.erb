@@ -1,8 +1,18 @@
-<div>
-  <h1><%= @job.title %></h1>
-  <p><%= @job.category %></p>
-  <p><%= @job.description %></p>
-  <p><%= @job.company %></p>
-  <p><%= @job.location %></p>
-</div>
+<section>
+  <div>
+    <h1><%= @job.title %></h1>
+    <hr>
+    <dl>
+      <dt>Categoria</dt>
+        <dd><%= @job.category %></dd>
+      <dt>Descrição</dt>
+        <dd><%= @job.description %></dd>
+      <dt>Empresa</dt>
+        <dd><%= @job.company %></dd>
+      <dt>Local</dt>
+        <dd><%= @job.location %></dd>
+    </dl>
+  </div>
+</section>
+
 <%= link_to 'Voltar', root_path %>
