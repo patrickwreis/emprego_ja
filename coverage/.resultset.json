@@ -5,11 +5,17 @@
         1,
         null
       ],
-      "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/models/job.rb": [
+      "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/models/company.rb": [
+        1,
         1,
         null
       ],
       "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/models/job.rb": [
         1,
         1,
         null
@@ -22,6 +28,7 @@
         null,
         null,
         1,
+        2,
         2,
         null,
         null,
@@ -72,6 +79,6 @@
         0
       ]
     },
-    "timestamp": 1468015864
+    "timestamp": 1468021340
   }
 }

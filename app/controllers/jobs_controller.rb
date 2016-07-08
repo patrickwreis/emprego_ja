@@ -6,10 +6,11 @@ class JobsController < ApplicationController
 
   def new
     @job = Job.new
+    @companies = Company.all
   end
 
   def create
-    @job = Job.create(params.require(:job).permit(:title, :company, :description, :location, :category, :featured))
+    @job = Job.create(params.require(:job).permit(:title, :company_id, :description, :location, :category, :featured))
     redirect_to @job
   end
 
