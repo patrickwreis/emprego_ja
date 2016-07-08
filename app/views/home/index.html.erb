@@ -5,7 +5,14 @@
 <% @jobs.each do |job| %>
   <div>
     <h1><%= link_to job.title, job%></h1>
-    <h2><%= job.company%></h2>
-    <h2><%= job.location%></h2><p>
+    <% if job.featured? %>
+      <strong>Destaque</strong>
+    <% end %>
+    <dl>
+      <dt>Empresa</dt>
+        <dd><%= job.company%></dd>
+      <dt>Local</dt>
+        <dd><%= job.location%></dd>
+    </dl>
   </div>
 <% end %>
