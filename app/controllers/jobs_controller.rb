@@ -10,8 +10,15 @@ class JobsController < ApplicationController
   end
 
   def create
-    @job = Job.create(params.require(:job).permit(:title, :company_id, :description, :location, :category, :featured))
-    redirect_to @job
+    @job = Job.new(params.require(:job).permit(:title, :company_id, :description, :location, :category, :featured))
+    if @job.save
+      redirect_to @job
+    else
+      flash[:notice] = 'Não foi possível criar a vaga'
+      @companies = Company.all
+      render 'new'
+
+    end
   end
 
 
