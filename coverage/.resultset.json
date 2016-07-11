@@ -21,6 +21,28 @@
         1,
         null
       ],
+      "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/controllers/companies_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/controllers/jobs_controller.rb": [
         1,
         null,
@@ -46,11 +68,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/controllers/application_controller.rb": [
-        1,
-        1,
         null
       ],
       "/Users/campuscode6/Leonardo/projetos/emprego-ja/app/controllers/home_controller.rb": [
@@ -87,6 +104,6 @@
         0
       ]
     },
-    "timestamp": 1468024897
+    "timestamp": 1468275548
   }
 }
