@@ -1,33 +1,6 @@
 <section>
   <h1>Nova Vaga</h1>
-  <span class="error"><%= notice %></span>
-  <%= form_for @job do |f| %>
-    <div>
-      <%= f.label :title, 'Título' %>
-      <%= f.text_field :title %>
+     <div>
+      <%= render partial: 'form', locals: {submit_text: 'Criar Vaga'} %>
     </div>
-    <div>
-      <%= f.label :location, 'Local' %>
-      <%= f.text_field :location %>
-    </div>
-    <div>
-      <%= f.label :category, 'Categoria' %>
-      <%= f.text_field :category %>
-    </div>
-    <div>
-      <%= f.label :company_id, 'Empresa' %>
-      <%= f.collection_select :company_id, @companies, :id, :name %>
-    </div>
-    <div>
-      <%= f.label :description, 'Descrição' %>
-      <%= f.text_field :description %>
-    </div>
-    <div>
-      <strong><%= f.label :featured, 'Destaque' %></strong>
-      <%= f.check_box :featured %>
-    </div>
-    <div>
-      <%= f.submit 'Criar Vaga'%>
-    </div>
-  <% end %>
 </section>
