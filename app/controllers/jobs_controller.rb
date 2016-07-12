@@ -6,7 +6,7 @@ class JobsController < ApplicationController
 
   def new
     @job = Job.new
-    @companies = Company.all
+    @companies = companies_all
   end
 
   def create
@@ -15,14 +15,14 @@ class JobsController < ApplicationController
       redirect_to @job
     else
       flash[:notice] = 'Não foi possível criar a vaga'
-      @companies = Company.all
+      @companies = companies_all
       render 'new'
     end
   end
 
   def edit
     @job = Job.find(params[:id])
-    @companies = Company.all
+    @companies = companies_all
   end
 
   def update
@@ -31,9 +31,13 @@ class JobsController < ApplicationController
       redirect_to @job
     else
       flash[:notice] = 'Não foi possível atualizar a vaga'
-      @companies = Company.all
+      @companies = companies_all
       render 'edit'
     end
+  end
+
+  def companies_all
+    Company.all
   end
 
   def job_params

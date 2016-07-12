@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-11T22:05:46-03:00">2016-07-11T22:05:46-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-12T18:47:22-03:00">2016-07-12T18:47:22-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">77.78%</span></span>
+    (<span class="covered_percent"><span class="red">78.79%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.56
+         1.7
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>12</b> files in total.
-    <b>63</b> relevant lines. 
-    <span class="green"><b>49</b> lines covered</span> and
+    <b>66</b> relevant lines. 
+    <span class="green"><b>52</b> lines covered</span> and
     <span class="red"><b>14</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -84,10 +84,10 @@
         <td class="strong"><a href="#1b7deba8f988507d4d77e55b5afe757dbf2f8fb7" class="src_link" title="app/controllers/companies_controller.rb">app/controllers/companies_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>19</td>
-        <td>10</td>
-        <td>10</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -103,11 +103,11 @@
       <tr>
         <td class="strong"><a href="#ae26f59da8293b8a9bbae8198858058e8671a938" class="src_link" title="app/controllers/jobs_controller.rb">app/controllers/jobs_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>43</td>
-        <td>25</td>
-        <td>25</td>
+        <td>47</td>
+        <td>27</td>
+        <td>27</td>
         <td>0</td>
-        <td>2.1</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
@@ -183,15 +183,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.21
+         2.37
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>4</b> files in total.
-    <b>41</b> relevant lines. 
-    <span class="green"><b>41</b> lines covered</span> and
+    <b>44</b> relevant lines. 
+    <span class="green"><b>44</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -222,10 +222,10 @@
         <td class="strong"><a href="#1b7deba8f988507d4d77e55b5afe757dbf2f8fb7" class="src_link" title="app/controllers/companies_controller.rb">app/controllers/companies_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>19</td>
-        <td>10</td>
-        <td>10</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -241,11 +241,11 @@
       <tr>
         <td class="strong"><a href="#ae26f59da8293b8a9bbae8198858058e8671a938" class="src_link" title="app/controllers/jobs_controller.rb">app/controllers/jobs_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>43</td>
-        <td>25</td>
-        <td>25</td>
+        <td>47</td>
+        <td>27</td>
+        <td>27</td>
         <td>0</td>
-        <td>2.1</td>
+        <td>2.3</td>
       </tr>
       
     </tbody>
@@ -690,8 +690,8 @@
     <h3>app/controllers/companies_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -726,25 +726,25 @@
         <li class="covered" data-hits="4" data-linenumber="5">
           <span class="hits">4</span>
           
-          <code class="ruby">    if @company.jobs.empty?</code>
+          <code class="ruby">    @jobs = @company.jobs</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="6">
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if @jobs.empty?</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="7">
           <span class="hits">3</span>
           
           <code class="ruby">      flash[:notice] = &#39;Nenhuma vaga disponível&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">    #@jobs = @company.jobs</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -900,8 +900,8 @@
     <h3>app/controllers/jobs_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>25</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
+      <b>27</b> relevant lines. 
+      <span class="green"><b>27</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -960,7 +960,7 @@
         <li class="covered" data-hits="3" data-linenumber="9">
           <span class="hits">3</span>
           
-          <code class="ruby">    @companies = Company.all</code>
+          <code class="ruby">    @companies = companies_all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -1014,7 +1014,7 @@
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">      @companies = Company.all</code>
+          <code class="ruby">      @companies = companies_all</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
@@ -1056,7 +1056,7 @@
         <li class="covered" data-hits="3" data-linenumber="25">
           <span class="hits">3</span>
           
-          <code class="ruby">    @companies = Company.all</code>
+          <code class="ruby">    @companies = companies_all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -1110,7 +1110,7 @@
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">      @companies = Company.all</code>
+          <code class="ruby">      @companies = companies_all</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
@@ -1140,13 +1140,13 @@
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">  def job_params</code>
+          <code class="ruby">  def companies_all</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="40">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="40">
+          <span class="hits">8</span>
           
-          <code class="ruby">    params.require(:job).permit(:title, :company_id, :description, :location, :category, :featured)</code>
+          <code class="ruby">    Company.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
@@ -1161,7 +1161,31 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def job_params</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="44">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    params.require(:job).permit(:title, :company_id, :description, :location, :category, :featured)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">end</code>

@@ -1,33 +1,17 @@
 <section>
-  <h1><%= @company.name %></h1>
-  <dl>
-    <dt>Local</dt>
-    <dd><%= @company.location %></dd>
-    <dt>Email</dt>
-    <dd><%= @company.mail %></dd>
-    <dt>Telefone</dt>
-    <dd><%= @company.phone %></dd>
-  </dl>
+  <div>
+    <h1><%= @company.name %></h1>
+    <dl>
+      <dt>Local</dt>
+      <dd><%= @company.location %></dd>
+      <dt>Email</dt>
+      <dd><%= @company.mail %></dd>
+      <dt>Telefone</dt>
+      <dd><%= @company.phone %></dd>
+    </dl>
+  </div>
   <hr>
-  <% if notice %>
-    <span class="error"><%= notice %></span>
-  <% else %>
-    <% @company.jobs.each do |job| %>
-      <div>
-        <h1><%= link_to job.title, job %></h1>
-        <% if job.featured? %>
-          <strong>Destaque</strong>
-        <% end %>
-        <dl>
-          <dt>Empresa</dt>
-          <dd><%= job.company.name%></dd>
-          <dt>Categoria</dt>
-          <dd><%= job.category%></dd>
-          <dt>Local</dt>
-          <dd><%= job.location%></dd>
-        </dl>
-      </div>
-    <% end %>
-  <% end %>
-
+<div>
+  <%= render @jobs%>
+</div>
 </section>

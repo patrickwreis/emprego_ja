@@ -3,23 +3,16 @@
 <%= link_to 'Criar Vaga', new_job_path%> |
 <%= link_to 'Criar Empresa', new_company_path%>
 
-<div>
-    <% @companies.each do |company| %>
-      <%= link_to company.name, company %>
-    <% end %>
-</div>
-
-<% @jobs.each do |job| %>
+<aside>
   <div>
-    <h1><%= link_to job.title, job%></h1>
-    <% if job.featured? %>
-      <strong>Destaque</strong>
-    <% end %>
-    <dl>
-      <dt>Empresa</dt>
-        <dd><%= job.company.name%></dd>
-      <dt>Local</dt>
-        <dd><%= job.location%></dd>
-    </dl>
+      <% @companies.each do |company| %>
+        <%= link_to company.name, company %>
+      <% end %>
   </div>
-<% end %>
+</aside>
+
+<section>
+  <div>
+    <%= render @jobs %>
+  </div>
+</section>
