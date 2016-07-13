@@ -15,14 +15,10 @@
 
   <div class="col-md-3">
     <aside class="companies">
-      <div>
-        <h1>Empresas</h1>
-        <div class="list-group">
-            <% @companies.each do |company| %>
-              <div class="list-group-item"><%= link_to company.name, company%></div>
-            <% end %>
-        </div>
-      </div>
+      <%= render partial: 'companies/companies_list', locals: {companies: @companies} %>
+    </aside>
+    <aside class="categories">
+      <%= render partial: 'categories/categories_list', locals: {categories: @categories} %>
     </aside>
   </div>
 
