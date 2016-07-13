@@ -9,11 +9,15 @@
   </head>
 
   <body>
+    <div class="container">
+      <header>
+        <h1>Emprego Já</h1>
+      </header>
+      <div class="bg-danger">
+          <%= notice%>
+      </div>
+        <%= yield %>
+    </div>
 
-    <header>
-      <h1>Emprego Já</h1>
-    </header>
-    <%= yield %>
-    <span class="error"><%= notice %></span>
   </body>
 </html>

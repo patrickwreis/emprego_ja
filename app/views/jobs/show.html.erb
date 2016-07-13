@@ -1,9 +1,13 @@
 <section>
   <div>
     <h1><%= @job.title %></h1>
-    <strong><dt>Destaque</dt></strong>
+    <div class="destaque">
+      <strong>Destaque</strong>
+    </div>
+
     <hr>
-    <dl>
+
+    <dl class="dl-horizontal">
       <dt>Categoria</dt>
         <dd><%= @job.category.name %></dd>
       <dt>Descrição</dt>
@@ -13,9 +17,7 @@
       <dt>Local</dt>
         <dd><%= @job.location %></dd>
     </dl>
-
-    </div>
   </div>
 </section>
 
-<%= link_to 'Editar Vaga', edit_job_path %> <%= link_to 'Voltar', root_path %>
+<%= link_to 'Editar Vaga', edit_job_path, class: "btn btn-primary" %> <%= link_to 'Voltar', root_path, class: "btn btn-default" %>
