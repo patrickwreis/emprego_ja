@@ -4,7 +4,7 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
     @jobs = @company.jobs
     if @jobs.empty?
-      flash[:notice] = 'Nenhuma vaga disponível'
+      flash.now[:notice] = 'Nenhuma vaga disponível'
     end
   end
 
