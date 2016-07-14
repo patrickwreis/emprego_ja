@@ -1,6 +1,15 @@
 <section>
   <div>
-    <h1><%= @company.name %></h1>
+    <div class="row">
+      <div class="col-md-3">
+        <h1><%= @company.name %></h1>
+      </div>
+      <div class="col-md-9">
+        <% if @company.premium? %>
+          <%= image_tag 'estrela', alt: 'empresa premium', id: 'EmpresaPremium' %>
+        <% end %>
+      </div>
+    </div>
     <dl>
       <dt>Local</dt>
       <dd><%= @company.location %></dd>
